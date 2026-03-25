@@ -26,3 +26,33 @@ body > header {
 body > header nav {
   display: none;
 }
+
+main {
+  display: block;
+  flex: 1;
+  padding: 1rem;
+  background-color: #ddeeff;
+}
+
+main > article {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+}
+
+main > article header h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1a3a5c;
+}
+
+main > article p {
+  font-size: 0.95rem;
+}
+
+
+main > aside {
+  display: none;
+}
