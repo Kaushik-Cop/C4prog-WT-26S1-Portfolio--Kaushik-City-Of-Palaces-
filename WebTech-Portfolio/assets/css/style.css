@@ -160,8 +160,9 @@ body > footer ul li a:hover {
 
   main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 300px;
     margin: 16px 32px;
+    gap: 0;
   }
 
   main > article {
@@ -215,27 +216,38 @@ body > footer ul li a:hover {
     grid-column: 3;
     grid-row: 1 / span 4;
     background-color: #b8d4f0;
-    padding: 24px 28px;
+    padding: 0;
   }
 
   main > aside section {
-    margin-bottom: 32px;
+    border: 1px solid #7aaad0;
+    margin-bottom: 1rem;
   }
 
   main > aside section h2 {
     font-family: 'Merriweather', Georgia, serif;
-    font-size: 18px;
+    font-size: 0.95rem;
     font-weight: 700;
-    margin-bottom: 12px;
-    color: #1a3a5c;
+    background-color: #7aaad0;
+    color: #0d1f33;
+    padding: 0.6rem 1rem;
+    margin: 0;
   }
 
   main > aside section p {
     font-size: 17px;
     margin-bottom: 12px;
     color: #0d1f33;
+    padding: 0.75rem 1rem;
   }
 
+  main > aside section footer {
+    background-color: #cce0f5;
+    padding: 0.4rem 1rem;
+    font-size: 13px;
+    color: #2a4a6a;
+    border-top: 1px solid #7aaad0;
+  }
   main > aside section footer {
     margin-top: 16px;
     font-size: 13px;
