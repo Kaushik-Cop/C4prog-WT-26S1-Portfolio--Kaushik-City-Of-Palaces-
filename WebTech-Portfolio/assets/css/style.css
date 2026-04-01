@@ -87,3 +87,49 @@ body > footer ul li a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
+
+@media (min-width: 1024px) {
+
+  /* --- 1. Header ------------------------------------------ */
+  body > header {
+    padding: 0.75rem 2rem;
+    gap: 1.5rem;
+  }
+
+  body > header h1 {
+    font-size: 1.25rem;
+    flex: 1;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  body > header nav {
+    display: flex;
+    align-items: center;
+  }
+
+  body > header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  body > header nav ul li a {
+    color: var(--color-header-text);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  body > header nav ul li a:hover {
+    border-bottom-color: var(--color-nav-text);
+    color: var(--color-nav-text);
+  }
