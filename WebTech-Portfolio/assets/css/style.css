@@ -89,9 +89,17 @@ body > footer ul li a:hover {
 }
 
 @media (min-width: 1024px) {
- 
+
+  body {
+    padding-top: 110px;
+  }
 
   body > header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
     background-color: #1a3a5c;
     display: flex;
     align-items: center;
@@ -100,24 +108,25 @@ body > footer ul li a:hover {
     padding: 10px 24px;
     min-height: 70px;
   }
- 
+
   body > header h1 {
     font-family: 'Merriweather', Georgia, serif;
     font-size: 35px;
     font-weight: 700;
     color: #ffffff;
   }
- 
+
   body > header img {
     width: 60px;
     height: 60px;
     object-fit: contain;
     flex-shrink: 0;
   }
- 
+
   .hamburger {
     display: none;
-  }  }
+  }
+
 
   body > header nav {
     display: flex;
