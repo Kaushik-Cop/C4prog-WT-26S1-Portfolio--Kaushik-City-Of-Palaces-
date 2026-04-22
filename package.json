@@ -1,8 +1,0 @@
-{
-  "name": "webtech-portfolio",
-  "version": "1.0.0",
-  "type": "module",
-  "devDependencies": {
-    "eslint": "^10.0.0"
-  }
-}
