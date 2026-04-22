@@ -1,7 +1,7 @@
-const js = require("@eslint/js");
-
-module.exports = [
-  js.configs.recommended,
+export default [
+  {
+    ignores: ["eslint.config.js", "node_modules/**"]
+  },
   {
     languageOptions: {
       ecmaVersion: "latest",
@@ -10,6 +10,7 @@ module.exports = [
         document: "readonly",
         console: "readonly"
       }
-    }
+    },
+    rules: {}
   }
 ];
