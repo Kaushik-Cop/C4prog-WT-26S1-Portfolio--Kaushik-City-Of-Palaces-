@@ -59,6 +59,10 @@ body > header nav {
 main {
   flex: 1;
   padding: 1rem;
+  max-width: 960px;   
+  width: 100%;        
+  margin-left: auto;  
+  margin-right: auto;
 }
 
 main > article {
@@ -194,7 +198,9 @@ body > footer nav ul li a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 300px;
     gap: 0;
-    margin: 1rem 2rem;
+    max-width: 960px;   
+    width: 100%;       
+    margin: 1rem auto;
     padding: 0;
   }
 
