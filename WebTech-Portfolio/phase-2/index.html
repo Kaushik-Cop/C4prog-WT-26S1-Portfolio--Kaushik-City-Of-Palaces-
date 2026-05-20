@@ -80,29 +80,36 @@
           <h2>Ninja API App</h2>
         </header>
 
-        <p class="api-pick-label">Pick from the following APIs</p>
+        <form id="api-form">
 
-        <div class="checkbox-group">
-          <label class="checkbox-label">
-            <input type="checkbox" id="cb-advice">
-            Advice
-          </label>
-          <label class="checkbox-label">
-            <input type="checkbox" id="cb-currency">
-            Currency Conversion
-          </label>
-        </div>
+          <fieldset>
+            <legend>Pick from the following APIs</legend>
 
-        <div class="input-area">
-          <label id="input-label" for="api-input">Select an API above to get started</label>
-          <input type="text" id="api-input" placeholder="" disabled>
-        </div>
+            <label class="checkbox-label">
+              <input type="checkbox" id="cb-advice">
+              Advice
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" id="cb-currency">
+              Currency Conversion
+            </label>
+          </fieldset>
 
-        <button type="button" id="submit-btn" disabled>Get Response</button>
+          <fieldset>
+            <legend>API Input</legend>
 
-        <div id="response-area" class="response-area">
-          <p id="response-text">Waiting for your selection...</p>
-        </div>
+            <label id="input-label" for="api-input">Select an API above to get started</label>
+            <input type="text" id="api-input" placeholder="" disabled>
+          </fieldset>
+
+          <button type="button" id="submit-btn" disabled>Get Response</button>
+
+          <div id="response-area" class="response-area">
+            <p id="response-text">Waiting for your selection...</p>
+          </div>
+
+        </form>
+
       </article>
 
       <aside>
