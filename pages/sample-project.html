@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Project | Kaushik City Of Palaces</title>
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script src="../assets/js/sample-project.js" defer></script>
+</head>
+<body class="bg-white text-gray-800">
+
+<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-[#445E93] text-white">
+    <a href="home.html" class="flex items-center gap-2">
+        <h1 class="text-sm font-bold">Kaushik City Of Palaces</h1>
+    </a>
+    <nav aria-label="Main navigation">
+        <ul class="flex flex-wrap text-base gap-4 list-none p-0">
+            <li><a href="home.html" class="hover:text-[#7EB2DD] transition duration-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-[#7EB2DD] transition duration-300">About</a></li>
+            <li><a href="contact.html" class="hover:text-[#7EB2DD] transition duration-300">Contact</a></li>
+            <li><a href="resume.html" class="hover:text-[#7EB2DD] transition duration-300">Résumé</a></li>
+            <li><a href="projects.html" class="hover:text-[#7EB2DD] transition duration-300">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mx-auto px-6 py-16">
+
+    <h2 class="text-3xl font-bold text-[#445E93] mb-4 text-center">Ninja API Demo</h2>
+    <p class="text-center text-gray-600 mb-10">Select an API below and click "Get Response" to see it in action.</p>
+
+    <section aria-labelledby="api-heading" class="max-w-2xl mx-auto">
+        <h3 id="api-heading" class="text-xl font-bold text-white bg-[#445E93] px-4 py-2 rounded mb-6">API Explorer</h3>
+
+        <fieldset class="border border-[#7EB2DD] rounded p-4 mb-6">
+            <legend class="font-bold text-[#445E93] px-2">Pick an API</legend>
+            <ul class="list-none p-0 flex flex-col gap-3 mt-2">
+                <li>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" id="cb-advice" class="w-4 h-4 accent-[#445E93]">
+                        <span>Advice API</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" id="cb-currency" class="w-4 h-4 accent-[#445E93]">
+                        <span>Currency Converter</span>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset class="border border-[#7EB2DD] rounded p-4 mb-6">
+            <legend class="font-bold text-[#445E93] px-2">API Input</legend>
+            <div class="flex flex-col gap-2 mt-2">
+                <label id="input-label" for="api-input" class="text-gray-600">Select an API above to get started</label>
+                <input type="text" id="api-input" disabled
+                    class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-[#4D9DE0] disabled:bg-gray-100 disabled:cursor-not-allowed">
+            </div>
+        </fieldset>
+
+        <button type="button" id="submit-btn" disabled
+            class="w-full bg-[#445E93] text-white font-bold px-6 py-3 rounded hover:bg-[#4D9DE0] transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed mb-6">
+            Get Response
+        </button>
+
+        <section aria-live="polite" id="response-area" class="border border-[#7EB2DD] rounded p-6 bg-gray-50">
+            <p id="response-text" class="text-gray-500 text-center">Waiting for your selection...</p>
+        </section>
+
+    </section>
+
+</main>
+
+<footer class="bg-[#445E93] text-white p-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-sm">© 2026 Kaushik City Of Palaces. All rights reserved.</p>
+    <nav aria-label="Footer navigation">
+        <ul class="flex gap-4 text-sm list-none p-0">
+            <li><a href="about.html" class="hover:text-[#7EB2DD] transition duration-300">About</a></li>
+            <li><a href="contact.html" class="hover:text-[#7EB2DD] transition duration-300">Contact</a></li>
+            <li><a href="https://github.com/Kaushik-Cop" class="hover:text-[#7EB2DD] transition duration-300">GitHub</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
