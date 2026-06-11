@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../assets/css/site.css">
     <script src="../assets/js/sample-project.js" defer></script>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
 
-<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-[#445E93] text-white">
-    <a href="home.html" class="flex items-center gap-2">
-        <h1 class="text-sm font-bold">Kaushik City Of Palaces</h1>
+<header class="sticky top-0 flex items-center justify-between px-6 py-4 bg-[#445E93] text-white">
+    <a href="home.html">
+        <h1 class="text-sm font-bold whitespace-nowrap">Kaushik City Of Palaces</h1>
     </a>
     <nav aria-label="Main navigation">
-        <ul class="flex flex-wrap text-base gap-4 list-none p-0">
+        <ul class="flex text-sm gap-4 list-none p-0 m-0">
             <li><a href="home.html" class="hover:text-[#7EB2DD] transition duration-300">Home</a></li>
             <li><a href="about.html" class="hover:text-[#7EB2DD] transition duration-300">About</a></li>
             <li><a href="contact.html" class="hover:text-[#7EB2DD] transition duration-300">Contact</a></li>
@@ -24,7 +24,7 @@
     </nav>
 </header>
 
-<main class="container mx-auto px-6 py-16">
+<main class="flex-1 container mx-auto px-6 py-16">
 
     <h2 class="text-3xl font-bold text-[#445E93] mb-4 text-center">Ninja API Demo</h2>
     <p class="text-center text-gray-600 mb-10">Select an API below and click "Get Response" to see it in action.</p>
@@ -64,9 +64,9 @@
             Get Response
         </button>
 
-        <section aria-live="polite" id="response-area" class="border border-[#7EB2DD] rounded p-6 bg-gray-50">
+        <div aria-live="polite" id="response-area" class="border border-[#7EB2DD] rounded p-6 bg-gray-50">
             <p id="response-text" class="text-gray-500 text-center">Waiting for your selection...</p>
-        </section>
+        </div>
 
     </section>
 

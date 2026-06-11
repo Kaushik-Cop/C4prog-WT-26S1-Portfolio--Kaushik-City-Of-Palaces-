@@ -6,14 +6,14 @@
     <title>Home | Kaushik City Of Palaces</title>
     <link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-white text-gray-800 min-h-screen flex flex-col">
 
-<header class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2 bg-[#445E93] text-white">
-    <a href="home.html" class="flex items-center gap-2">
-        <h1 class="text-sm font-bold">Welcome To My Page</h1>
+<header class="sticky top-0 flex items-center justify-between px-6 py-4 bg-[#445E93] text-white">
+    <a href="home.html">
+        <h1 class="text-sm font-bold whitespace-nowrap">Kaushik City Of Palaces</h1>
     </a>
     <nav aria-label="Main navigation">
-        <ul class="flex flex-wrap text-base gap-4">
+        <ul class="flex text-sm gap-4 list-none p-0 m-0">
             <li><a href="home.html" class="hover:text-[#7EB2DD] transition duration-300">Home</a></li>
             <li><a href="about.html" class="hover:text-[#7EB2DD] transition duration-300">About</a></li>
             <li><a href="contact.html" class="hover:text-[#7EB2DD] transition duration-300">Contact</a></li>
@@ -23,10 +23,10 @@
     </nav>
 </header>
 
-<main>
+<main class="flex-1">
 
     <section aria-labelledby="hero-heading" class="bg-[#4D9DE0] text-white py-24 px-6 text-center">
-        <h2 id="hero-heading" class="text-5xl font-bold mb-4">Hi, I'm Kaushik City Of Palaces </h2>
+        <h2 id="hero-heading" class="text-5xl font-bold mb-4">Hi, I'm Kaushik City Of Palaces</h2>
         <p class="text-xl mb-8">Web Technologies | Cert IV in IT (Programming)</p>
         <a href="projects.html" class="bg-white text-[#445E93] font-bold px-6 py-3 rounded hover:bg-[#7EB2DD] hover:text-white transition duration-300">View My Projects</a>
     </section>
@@ -40,9 +40,9 @@
                     <header class="bg-[#445E93] text-white p-4 rounded-t">
                         <h3 class="font-bold text-lg">HTML & CSS</h3>
                     </header>
-                    <section class="p-6">
+                    <div class="p-6">
                         <p>Building structured, semantic web pages with modern CSS styling and responsive layouts.</p>
-                    </section>
+                    </div>
                 </article>
             </li>
 
@@ -51,9 +51,9 @@
                     <header class="bg-[#445E93] text-white p-4 rounded-t">
                         <h3 class="font-bold text-lg">JavaScript</h3>
                     </header>
-                    <section class="p-6">
+                    <div class="p-6">
                         <p>Writing vanilla JavaScript for interactive and dynamic web experiences.</p>
-                    </section>
+                    </div>
                 </article>
             </li>
 
@@ -62,9 +62,9 @@
                     <header class="bg-[#445E93] text-white p-4 rounded-t">
                         <h3 class="font-bold text-lg">Tailwind CSS</h3>
                     </header>
-                    <section class="p-6">
+                    <div class="p-6">
                         <p>Using utility-first CSS to rapidly build beautiful, responsive interfaces.</p>
-                    </section>
+                    </div>
                 </article>
             </li>
 
