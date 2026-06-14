@@ -43,31 +43,36 @@
             <h3 id="form-heading" class="text-xl font-bold text-[#445E93] mb-6">Send a Message</h3>
             <form id="contact-form" novalidate class="flex flex-col gap-6">
 
-                <div class="flex flex-col gap-1">
-                    <label for="name" class="font-semibold">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your full name"
-                        class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-[#4D9DE0]">
-                    <span id="name-error" class="text-red-500 text-sm hidden">Please enter your full name (letters only).</span>
-                </div>
+                <fieldset class="flex flex-col gap-6 border-0 p-0 m-0">
+                    <legend class="sr-only">Contact form fields</legend>
 
-                <div class="flex flex-col gap-1">
-                    <label for="email" class="font-semibold">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="your@email.com"
-                        class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-[#4D9DE0]">
-                    <span id="email-error" class="text-red-500 text-sm hidden">Please enter a valid email address.</span>
-                </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="name" class="font-semibold">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name"
+                            class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-[#4D9DE0]">
+                        <span id="name-error" class="text-red-500 text-sm hidden">Please enter your full name (letters only).</span>
+                    </div>
 
-                <div class="flex flex-col gap-1">
-                    <label for="message" class="font-semibold">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Your message here..."
-                        class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-[#4D9DE0]"></textarea>
-                    <span id="message-error" class="text-red-500 text-sm hidden">Please enter a message (at least 10 characters).</span>
-                </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="email" class="font-semibold">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com"
+                            class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-[#4D9DE0]">
+                        <span id="email-error" class="text-red-500 text-sm hidden">Please enter a valid email address.</span>
+                    </div>
 
-                <button type="submit" id="submit-btn"
-                    class="bg-[#445E93] text-white font-bold px-6 py-3 rounded hover:bg-[#4D9DE0] transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
-                    Send Message
-                </button>
+                    <div class="flex flex-col gap-1">
+                        <label for="message" class="font-semibold">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message here..."
+                            class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-[#4D9DE0]"></textarea>
+                        <span id="message-error" class="text-red-500 text-sm hidden">Please enter a message (at least 10 characters).</span>
+                    </div>
+
+                    <button type="submit" id="submit-btn"
+                        class="bg-[#445E93] text-white font-bold px-6 py-3 rounded hover:bg-[#4D9DE0] transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                        Send Message
+                    </button>
+
+                </fieldset>
 
                 <p id="success-msg" class="text-green-600 font-semibold hidden">✅ Message sent successfully!</p>
 
